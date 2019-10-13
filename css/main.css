@@ -1,0 +1,205 @@
+body {
+  color: #fff;
+  background-color: #000;
+  @import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese,latin-ext");
+  font-family: "Sawarabi Mincho", sans-serif; }
+
+header .header-wrap {
+  position: relative;
+  width: 100%;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; }
+  header .header-wrap img {
+    width: 826px;
+    position: relative;
+    top: 83px;
+    right: 83px; }
+  header .header-wrap h1 {
+    padding-left: 10%;
+    font-size: 40px;
+    padding-top: 140px;
+    padding-right: 30px;
+    position: absolute;
+    left: 0; }
+  header .header-wrap h2 {
+    padding-top: 116px;
+    font-size: 16px;
+    position: absolute;
+    left: 120px; }
+header .red {
+  width: 63%;
+  right: 0;
+  height: 505px;
+  background-color: #800000;
+  position: absolute;
+  z-index: 0.1; }
+header a {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  background-color: #800000;
+  top: 543px;
+  left: 0;
+  width: 80px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -moz-linear-gradient(top, #eb2e15, #800000);
+  background: -webkit-linear-gradient(top, #eb2e15, #800000);
+  background: linear-gradient(to bottom, #eb2e15, #800000); }
+  header a p {
+    border: #fff 1px solid;
+    padding: 45px 20px; }
+
+main {
+  text-align: center;
+  margin: 0 auto; }
+  main .commit {
+    position: relative;
+    text-align: center; }
+    main .commit h2::after {
+      display: block;
+      width: 2em;
+      margin: 0 auto;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: #fff;
+      content: ""; }
+    main .commit .slide-wrap {
+      width: 700px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 3; }
+      main .commit .slide-wrap #wrapper {
+        position: relative;
+        height: 300px;
+        z-index: 3;
+        overflow: hidden; }
+        main .commit .slide-wrap #wrapper li {
+          height: 300px;
+          position: absolute;
+          opacity: 0;
+          transform: scale(0.8);
+          transition: opacity 1s linear, transform 6s linear; }
+          main .commit .slide-wrap #wrapper li.active {
+            opacity: 1; }
+          main .commit .slide-wrap #wrapper li.zoom {
+            transform: scale(1.2); }
+        main .commit .slide-wrap #wrapper img {
+          width: 700px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+          transform: scale(1); }
+    main .commit .commit-red-box {
+      width: 880px;
+      right: 0;
+      left: 0;
+      height: 400px;
+      top: 300px;
+      margin: 0 auto;
+      background-color: #800000;
+      position: absolute; }
+    main .commit p {
+      padding: 50px;
+      font-size: 20px;
+      position: relative;
+      line-height: 65px; }
+      main .commit p span {
+        font-size: 25px; }
+  main .menu {
+    padding-top: 170px; }
+    main .menu h2 {
+      line-height: 40px; }
+    main .menu h2::after {
+      display: block;
+      width: 2em;
+      margin: 0 auto;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: #fff;
+      content: ""; }
+    main .menu p {
+      padding-bottom: 30px; }
+    main .menu .menu-img-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover; }
+      main .menu .menu-img-wrap .img-1 {
+        width: 659px;
+        padding-right: 15px;
+        padding-bottom: 20px; }
+      main .menu .menu-img-wrap .img-2 {
+        width: 419px;
+        padding-bottom: 20px; }
+      main .menu .menu-img-wrap .img-3 {
+        width: 743px;
+        padding-right: 15px; }
+      main .menu .menu-img-wrap .img-4 {
+        width: 333px; }
+
+.access {
+  padding-top: 170px;
+  position: relative;
+  padding-bottom: 180px; }
+  .access h2 {
+    position: relative;
+    font-size: 36px;
+    line-height: 59px;
+    z-index: 1; }
+    .access h2::after {
+      display: block;
+      width: 3em;
+      height: 2px;
+      margin-top: 8px;
+      background-color: #fff;
+      margin-left: 1em;
+      content: "";
+      margin: 15px auto 45px auto; }
+  .access ul li {
+    position: relative;
+    z-index: 1;
+    top: 220px;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 54px; }
+    .access ul li:first-child {
+      padding-bottom: 20px; }
+  .access .access-wrap {
+    display: flex;
+    justify-content: space-between; }
+  .access .access-red-box {
+    background-color: #800000;
+    width: 982px;
+    height: 311px;
+    top: 400px;
+    position: absolute; }
+  .access iframe {
+    position: relative;
+    z-index: 2;
+    width: 800px;
+    height: 330px;
+    border: 0; }
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 80px; }
+footer::before {
+  display: block;
+  width: 70em;
+  height: 1px;
+  margin-top: 8px;
+  background-color: #fff;
+  margin-left: 1em;
+  content: "";
+  margin: 15px auto 45px auto; }
+
+/*# sourceMappingURL=main.css.map */

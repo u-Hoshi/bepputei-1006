@@ -1,0 +1,276 @@
+body {
+  color: #fff;
+  background-color: #000;
+  @import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese,latin-ext");
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+header {
+  .header-wrap {
+    position: relative;
+    width: 100%;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    img {
+      width: 826px;
+      position: relative;
+      top: 83px;
+      right: 83px;
+    }
+    h1 {
+      padding-left: 10%;
+      font-size: 40px;
+      padding-top: 140px;
+      padding-right: 30px;
+      position: absolute;
+      left: 0;
+    }
+    h2 {
+      padding-top: 116px;
+      font-size: 16px;
+      position: absolute;
+      left: 120px;
+    }
+  }
+  .red {
+    width: 63%;
+    right: 0;
+    height: 505px;
+    background-color: #800000;
+    position: absolute;
+    z-index: 0.1;
+  }
+  a {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    background-color: #800000;
+    top: 543px;
+    // position: absolute;
+    left: 0;
+    width: 80px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid #fff;
+    // outline-offset: -5em;
+    background: -moz-linear-gradient(top, #eb2e15, #800000);
+    background: -webkit-linear-gradient(top, #eb2e15, #800000);
+    background: linear-gradient(to bottom, #eb2e15, #800000);
+    p {
+      border: #fff 1px solid;
+      padding: 45px 20px;
+    }
+  }
+}
+main {
+  text-align: center;
+  margin: 0 auto;
+  .commit {
+    position: relative;
+    text-align: center;
+    .slide-wrap {
+      width: 700px;
+      //   border: #eb2e15 10px solid;
+      margin: 0 auto;
+      //   height: 400px;
+      position: relative;
+      z-index: 3;
+      //   top: 0;
+      //   left: 0;
+      //   opacity: 0;
+      transform: scale(1);
+      transition: opacity 1s linear, transform 6.5s linear;
+      // transformの6.5は
+      &.active {
+        opacity: 1;
+        // z-index: z;
+      }
+      &.zoom {
+        transform: scale(1.3);
+      }
+      #wrapper {
+        position: relative;
+        height: 300px;
+        z-index: 3;
+        overflow: hidden;
+
+        
+        // ここでimgというクラス名を使わないのでしたらhtmlで定義したimgというクラス名を外しましょう
+        // もともとimgタグがhtmlで用意されているのでクラス名をつけるにしてもこの名前はややこしいです
+        li {
+          height: 300px;
+          position: absolute;
+
+          // 移してきたopacityです
+          // 初期状態では非表示にしておきます(=0)
+          opacity: 0;
+
+          // JSでliでの.activeのつけ外しを行うので新たに用意します
+          &.active {
+            opacity: 1
+          }
+        }
+
+        img {
+          //   height: 347px;
+          width: 700px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+
+          // opacityのつけ外しはimgタグではなく、
+          // liタグ(imgクラス)で行なっているのでliタグに移します
+          // ここのopacityはコメントアウトしておきます
+          // opacity: 0.5;
+
+          transform: scale(1);
+          transition: opacity 1s linear, transform 6s linear;
+
+          // imgタグにはjsでactiveのつけ外しを行なっていないので以下のコードは書いても意味がないです
+          // ややこしいのでコメントアウトしておきます
+          // &.active {
+          //   opacity: 1;
+          // }
+        }
+      }
+    }
+    .commit-red-box {
+      width: 880px;
+      right: 0;
+      left: 0;
+
+      height: 400px;
+      top: 300px;
+      margin: 0 auto;
+      background-color: #800000;
+      position: absolute;
+    }
+    p {
+      padding: 50px;
+      font-size: 20px;
+      position: relative;
+      line-height: 65px;
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+  .menu {
+    padding-top: 170px;
+    h2 {
+      line-height: 40px;
+    }
+    h2::after {
+      display: block;
+      width: 2em;
+      margin: 0 auto;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: #fff;
+      //   margin-left: 1em;
+      content: "";
+    }
+    p {
+      padding-bottom: 30px;
+    }
+    .menu-img-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+
+      .img-1 {
+        width: 659px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+      }
+      .img-2 {
+        width: 419px;
+        padding-bottom: 20px;
+      }
+      .img-3 {
+        width: 743px;
+        padding-right: 15px;
+      }
+      .img-4 {
+        width: 333px;
+      }
+    }
+  }
+}
+.access {
+  padding-top: 170px;
+  position: relative;
+  padding-bottom: 180px;
+  h2 {
+    position: relative;
+    font-size: 36px;
+    line-height: 59px;
+    z-index: 1;
+    // padding: 20px;
+    &::after {
+      display: block;
+      width: 3em;
+      height: 2px;
+      margin-top: 8px;
+      background-color: #fff;
+      margin-left: 1em;
+      content: "";
+      margin: 15px auto 45px auto;
+    }
+  }
+  ul li {
+    position: relative;
+    z-index: 1;
+    top: 220px;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 54px;
+    &:first-child {
+      padding-bottom: 20px;
+    }
+  }
+  .access-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .access-red-box {
+    background-color: #800000;
+    width: 982px;
+    height: 311px;
+    top: 400px;
+    position: absolute;
+  }
+  iframe {
+    position: relative;
+    z-index: 2;
+    width: 800px;
+    height: 330px;
+    // frameborder:0;
+    border: 0;
+    // allowfullscreen: "";
+  }
+}
+footer {
+  p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  &::before {
+    display: block;
+    width: 70em;
+    height: 1px;
+    margin-top: 8px;
+    background-color: #fff;
+    margin-left: 1em;
+    content: "";
+    margin: 15px auto 45px auto;
+  }
+}

@@ -1,0 +1,47 @@
+/*
+Error: Invalid Windows-31J character "\xE3"
+        on line 85 of scss/main_scss2.sass
+
+80:       //   top: 0;
+81:       //   left: 0;
+82:       //   opacity: 0;
+83:       transform: scale(1);
+84:       transition: opacity 1s linear, transform 6.5s linear;
+85:       // transformの6.5は
+86:       &.active {
+87:         opacity: 1;
+88:         // z-index: z;
+89:       }
+90:       &.zoom {
+
+Backtrace:
+scss/main_scss2.sass:85
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:1090:in `rescue in block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:1087:in `block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `each_with_index'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/util.rb:814:in `check_sass_encoding'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:444:in `check_encoding!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:400:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid Windows-31J character \"\xE3\"\A         on line 85 of scss/main_scss2.sass\A \A 80:       //   top: 0;\A 81:       //   left: 0;\A 82:       //   opacity: 0;\A 83:       transform: scale(1);\A 84:       transition: opacity 1s linear, transform 6.5s linear;\A 85:       // transformの6.5は\A 86:       &.active {\A 87:         opacity: 1;\A 88:         // z-index: z;\A 89:       }\A 90:       &.zoom {"; }

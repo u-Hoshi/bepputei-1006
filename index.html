@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>豚料理専門店別府亭</title>
+  </head>
+  <body>
+    <header>
+      <div class="red"></div>
+      <div class="header-wrap">
+        <div class="img-wrap">
+          <img src="./img/tonkatsu.jpg" 　alt="" />
+          <!-- ＜質問＞imgの本来のwidthより大きくとってしまいます。 -->
+          <!-- ＜背景＞予想なのですが<h2>や<h1>などを垂直に並べた事による挙動だと考えています。 -->
+          <!-- ＜目的＞imgのwidthをimg本来のwidthに合わせて残ったところはmarginにしたいです。 -->
+        </div>
+        <h2>豚肉専門店</h2>
+        <h1>別府亭</h1>
+        <!-- もっと良いクラス分けの仕方があったら教えて下さい。 -->
+      </div>
+      <a href="#">
+        <p>ご予約はこちらから</p>
+      </a>
+    </header>
+    <main>
+      <section class="commit">
+        <h2>こだわり</h2>
+        <div class="slide-wrap">
+          <ul id="wrapper">
+            <li class="img">
+              <img src="./img/about_pt01.jpg" alt="" />
+            </li>
+            <li class="img">
+              <img src="./img/Fotor_154968743311274.jpg" alt="" />
+            </li>
+            <li class="img">
+              <img src="./img/6940_ext_02_0.jpg" alt="" />
+            </li>
+          </ul>
+          <!-- ＜質問＞スライドショーの画像が表示することが出来ません。 -->
+          <!-- ＜背景＞他の要素のposition:absoluteやrelativeなどに影響されてしまっているのだと考えています。 -->
+          <!-- ＜目的＞＃wrapperごと一番手前にもってきて表示させたいです。 -->
+        </div>
+        <div class="commit-red-box"></div>
+        <p>
+          <span> 別府亭は、宮崎県に「自社ファーム」を所有しています。</span>
+          <br />めいっぱいの愛情を込めて育て、一匹一匹泣きながら屠殺しています。
+          <br />緑の中で元気いっぱいに育った栄養たっぷりの豚肉を、どうぞお召し上がりください
+        </p>
+      </section>
+      <section class="menu">
+        <h2>お品書き</h2>
+        <p>あらゆる豚料理をご用意しております。ぜひご賞味ください。</p>
+        <div class="menu-img-wrap">
+          <img src="./img/component (1).png" class="img-1" alt="" />
+          <img src="./img/component (3).png" class="img-2" alt="" />
+          <img src="./img/component (2).png" class="img-3" alt="" />
+          <img src="./img/component (4).png" class="img-4" alt="" />
+        </div>
+      </section>
+      <section class="access">
+        <h2>アクセス</h2>
+        <div class="access-wrap">
+          <ul>
+            <li>東京都池袋123‐3-4-5 別府ビル34階</li>
+            <li>池袋駅から徒歩10秒</li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8664534331347!2d139.70871141465486!3d35.729502780183026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z5rGg6KKL6aeF!5e0!3m2!1sja!2sjp!4v1570635894699!5m2!1sja!2sjp"
+          ></iframe>
+        </div>
+        <div class="access-red-box"></div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © Beppu Corporation.All Rights Reserved.</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
