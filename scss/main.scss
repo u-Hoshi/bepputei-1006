@@ -70,7 +70,11 @@ main {
   .commit {
     position: relative;
     text-align: center;
+    h2 {
+      line-height: 40px;
+    }
     h2::after {
+      margin-bottom: 20px;
       display: block;
       width: 2em;
       margin: 0 auto;

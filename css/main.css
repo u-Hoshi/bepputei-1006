@@ -59,7 +59,10 @@ main {
   main .commit {
     position: relative;
     text-align: center; }
+    main .commit h2 {
+      line-height: 40px; }
     main .commit h2::after {
+      margin-bottom: 20px;
       display: block;
       width: 2em;
       margin: 0 auto;
